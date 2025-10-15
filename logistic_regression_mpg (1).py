@@ -74,7 +74,7 @@ y = y_train
 m = X.shape[0]
 
 
-# bias column
+# bias column (x0 = 1)
 X = np.column_stack([np.ones(m), X])  # shape: (m, n+1)
 n_with_bias = X.shape[1]
 
